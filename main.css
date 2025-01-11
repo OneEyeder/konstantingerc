@@ -1,0 +1,446 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigation--menu--list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    text-decoration: none;
+}
+.navigation--menu--list--item {
+    display: flex;
+}
+.navigation--menu--list-item--link {
+    text-decoration: none;
+    color: slategrey;
+    transition: 0.3s;
+
+}
+.navigation--menu--list-item--link:hover {
+    color: black;
+}
+
+.header {
+    background-color: #f8f9fa; 
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 0 15px;
+}
+
+.navigation--menu--logo {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: left; 
+}
+
+.navigation--menu--list {
+    display: flex;
+    gap: 15px; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.hero {
+    background-image: url(./img/background.png);
+    height: 1150px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.heading--h1 {
+    color: white;
+    margin: 0;
+    margin-top: 20px;
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.heading--h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+
+}
+.heading--container {
+    display: flex;
+    flex-direction: column;
+}
+.container--section--hero--heading {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+    padding-top: 87px;
+}
+.container--section--hero--columns {
+    max-width: 1200px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
+
+    
+}
+
+
+.paragraph-columns {
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+
+}
+.button--columns {
+    color: white;
+    font-size: 22px;
+    background-color: #BDDEFF;
+    border: 0px;
+    padding-inline: 47px;
+    padding-block: 10px;
+    border-radius: 10px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.button--columns:hover {
+    background-color:#83c1ff ;
+}
+.container--section--hero--columns {
+    padding-top: 87px;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    gap: 75px;
+    padding-top: 78px;
+}
+
+.footer {
+    height: 170px;
+    background-color: #F8F9FA;
+}
+.container--footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.h3--footer {
+    color: #708090;
+    font-size: 45px;
+    transition: 0.3s;
+}
+.h3--footer:hover {
+    color: black;
+}
+.footer--link {
+    text-decoration: none;
+}
+.footer--item {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+.footer--list {
+    gap: 75px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+.active {
+    color: black;
+}
+/* 
+.portfolio--item__var1 {
+    display: inline-flex;
+    flex-direction: column;
+
+}
+.container--portfolio {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.portfolio--h3 {
+    color: white;
+    font-weight: 900;
+    font-size: 30px;
+}
+.portfolio--paragraph {
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+} */
+
+
+
+.container--portfolio__var1 {
+    display: flex; /* Используем flexbox для выравнивания */
+    justify-content: center; /* Центрируем все элементы */
+    gap:30px; /* Расстояние между элементами */
+    flex-wrap: wrap; /* Разрешаем перенос строк, если экран меньше */
+}
+
+.portfolio--item__var1 {
+    display: flex;
+    flex-direction: column; /* Элементы располагаются вертикально */
+    align-items: flex-start; /* Выровнять содержимое по левому краю */
+    text-align: left; /* Текст выравнивается по левому краю */
+    max-width: 250px; /* Ограничение ширины блока */
+}
+
+.portfolio--h3 {
+    color: white;
+    font-weight: 900;
+    font-size: 30px; /* Подогнал под скриншот */
+    margin-bottom: 5px; /* Отступ между заголовком и описанием */
+}
+
+.portfolio--paragraph {
+    color: white;
+    font-weight: 900;
+    font-size: 20px; /* Размер шрифта меньше, как на макете */
+    margin-bottom: 10px; /* Отступ от описания до изображения */
+    margin-top: 0;
+}
+
+.portfolio--image {
+    width: 100%; /* Изображение растягивается по ширине контейнера */
+    max-width: 250px; /* Ограничение размера */
+    height: auto; /* Сохраняем пропорции */
+    margin-bottom: 15px; /* Отступ от изображения до кнопки */
+    border-radius: 5px; /* Скругление углов */
+}
+
+.portfolio-button {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #add8e6; /* Цвет кнопки */
+    padding: 10px 60px; /* Внутренние отступы */
+    border-radius: 8px; /* Скругление кнопки */
+    font-size: 16px; /* Размер шрифта */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Лёгкая тень для кнопки */
+}
+.heading--projects--in--work{
+    display: flex;
+    justify-content: center;
+}
+.portfolio--h3.var--2 {
+    margin: 0;
+}
+.heading--h1.top {
+    margin: 0;
+}
+
+.heading--h2.top {
+margin: 0;
+}
+.content--about {
+    display: flex;
+    flex-direction: row;
+}
+.content--about__text {
+    font-size: 20px;
+    color: white;
+}
+.about-me {
+    padding: 0;
+    background-image: url(./img/background.png);
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  .about-content {
+    display: flex;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .text-section {
+    flex: 1;
+    z-index: 2;
+    padding: 40px;
+  }
+  
+  .image-section {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .image-section img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: #f0f0f0;
+    margin-bottom: 20px;
+  }
+  
+  .about-details {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .about-details h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  
+  .about-details ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+  
+  .about-details ul li {
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 15px;
+  }
+  .image-section {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .image-section img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    object-fit: cover;
+  }
+  .image-section {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .image-section img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 80%; /* Увеличиваем высоту изображения */
+    object-fit: cover;
+  }
+
+.about-details {
+    font-weight: 900;
+    font-size: 17px;
+}
+.subtitle {
+    font-size: 30px;
+    color: white;
+    font-weight: 900;
+}
+.main--title {
+    font-size: 40px;
+    color: white;
+    font-weight: 900;
+}
+.about-details {
+    max-width: 600px;
+}
+.content--about__text {
+    max-width: 750px;
+    font-size: 20px;
+    font-weight: 900;
+}
+.content--about--image {
+    position: relative;
+    top: 1px;
+    max-width: 570px;
+}
+.hero.about {
+    background-image: url(./img/background--portfolio.png);
+    height: 1300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.contacts--all {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+
+}
+.contact--my {
+    color: white;
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.contanct--1.last {
+    padding-bottom: 60px;
+}
+.hero.contacts {
+    background-image: url(./img/background--about.png);
+    height: 900px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.heading--h2.top.h2 {
+    padding-top: 30px;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+}

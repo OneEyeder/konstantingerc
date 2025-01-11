@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.burger-line {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+}
+
+.nav-menu {
+    display: none;
+}
+
+.nav-menu.active {
+    display: block;
+    position: absolute;
+   
+    background-color: #3e3e3e;
+    border-radius: 5px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.nav-list li {
+    margin: 10px 0;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.nav-menu.active {
+    padding-inline: 10px;
+}
+
+.section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: 900;
+    color: white;
+}
+
+.section-text {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 900;
+    color: white;
+}
+
+.section-button {
+    color: white;
+    font-size: 22px;
+    background-color: #BDDEFF;
+    border: 0px;
+    padding-inline: 47px;
+    padding-block: 10px;
+    border-radius: 10px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.section-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.heading--h1.mobile {
+color: white;
+font-size: 120px;
+font-weight: 900;
+padding: 0;
+margin: 0;
+}
+.heading--h1.mobile.portfolio {
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
+    }
+    .heading--h2.mobile.portfolio {
+        color: white;
+        font-size: 35px;
+        font-weight: 900;
+        padding: 0;
+        margin: 0;
+        }
+.heading--h1.mobile.smaller {
+    color: white;
+    font-size: 110px;
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
+    }
+.heading--h2.mobile {
+    color: white;
+    font-weight: 900;
+    font-size: 55px;
+    padding: 0;
+    margin: 0;
+}
+.heading--main__mobile {
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+}
+.header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.main {
+    background-image: url(./img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main.about--me {
+    background-image: url(./img/background--mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main.contacts {
+    background-image: url(./img/bc.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ a {
+text-decoration: none;
+color: black;
+}
+
+ul {
+    list-style: none;
+} 
+.footer--list.mobile {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.h3--footer.active.mobile {
+    color: black;
+    margin: 10px;
+}
+.h3--footer.mobile {
+    margin: 10px;
+    font-size: 60px;
+    color: #708090;
+
+}
+.h3--footer.mobile.last {
+    padding-top: 50px;
+}
+.h3--footer {
+    font-size: 45px;
+}
+.section-image.last {
+    margin-bottom: 80px;
+}
+.active {
+    color: black;
+}
+.section-button.mobile {
+    position: relative;
+    top:  20px;
+} 
+.section-text.mobile {
+    margin: 0;
+}
+.heading--h2.mobile.about {
+    color: white;
+    font-size: 22px;
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
+    }
+
+.content--about__text.mobile {
+color: white;
+font-size: 20px;
+font-weight: 900;
+padding-left: 20px;
+padding-right: 20px;
+padding-bottom: 40px;
+}
+
+.option {
+display: flex;
+flex-direction: column;
+text-align: center;
+/* background-color: #BDDEFF; */
+}
+
+.option--text {
+    color: white;
+    font-size: 35px;
+    font-weight: 900;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.option--button {
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 0px;
+    
+    
+}
+
+.option.laast {
+    padding-bottom: 410px;
+}
